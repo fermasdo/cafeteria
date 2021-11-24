@@ -60,15 +60,6 @@
     ?>
 
 
-    <h2 class="bg-info"> Depuracions i proves </h2>
-    <pre>
-            <?php
-            // Depuració
-            $taules = $bar->getTaules();
-            print_r($taules);
-            ?>
-    </pre>
-
 
 </body>
 
