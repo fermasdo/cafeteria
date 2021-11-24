@@ -1,6 +1,7 @@
 <?php
 
-class Producte {
+class Producte
+{
     private string $nomProducte;
     private float $preuUnitat;
 
@@ -13,7 +14,7 @@ class Producte {
 
     /**
      * Get the value of nomProducte
-     */ 
+     */
     public function getNomProducte()
     {
         return $this->nomProducte;
@@ -21,7 +22,7 @@ class Producte {
 
     /**
      * Get the value of preuUnitat
-     */ 
+     */
     public function getPreuUnitat()
     {
         return $this->preuUnitat;

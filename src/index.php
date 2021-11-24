@@ -22,52 +22,52 @@
     <p class="bg-warning"> <em> Exercici </em>: Cada taula té una sèrie de productes demanats, cal fer que el botó "Imprimir Tíquet" genere una pàgina amb el llistat de productes demanats per a la taula i el preu total. </p>
 
 
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th scope="col">Taula</th>
-                    <th scope="col">Botó</th>
-                </tr>
-            </thead>
-            <tbody>
-                
-        <?php
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Taula</th>
+                <th scope="col">Botó</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <?php
             include_once 'Bar.php';
             $bar = new Bar();
 
             $taules = $bar->getTaules();
 
-            foreach ($taules as $taula){
-                echo "<form action='".$_SERVER["PHP_SELF"]."' method='POST'>";
+            foreach ($taules as $taula) {
+                echo "<form action='" . $_SERVER["PHP_SELF"] . "' method='POST'>";
                 echo "<tr>";
                 echo "<th scope='row'> <input type='text' name='numTaula' id='taula' readonly value='" . $taula->getNumTaula() . "'></th>";
                 echo "<td> <button type='submit' class='btn btn-primary'> Imprimir Tíquet </button> </td>";
                 echo "</tr>";
                 echo "</form>";
             }
-        ?>
-        
-            </tbody>
-            </table>
-
-
-            <h2> Detall Comanda </h2>
-            <p class="bg-warning"> Ací s'ha de mostrar el tíquet generat </p>
-            <?php
-                /**
-                 * IMPLEMENTAR
-                 */
             ?>
 
+        </tbody>
+    </table>
 
-            <h2 class="bg-info"> Depuracions i proves </h2>
-            <pre>
+
+    <h2> Detall Comanda </h2>
+    <p class="bg-warning"> Ací s'ha de mostrar el tíquet generat </p>
+    <?php
+    /**
+     * IMPLEMENTAR
+     */
+    ?>
+
+
+    <h2 class="bg-info"> Depuracions i proves </h2>
+    <pre>
             <?php
-                // Depuració
-                $taules = $bar->getTaules();
-                print_r($taules);
+            // Depuració
+            $taules = $bar->getTaules();
+            print_r($taules);
             ?>
-            </pre>
+    </pre>
 
 
 </body>

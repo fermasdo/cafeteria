@@ -9,7 +9,8 @@ include_once 'Producte.php';
  * 
  */
 
-class Bar{
+class Bar
+{
     private $taules;
     private $carta;
 
@@ -21,22 +22,22 @@ class Bar{
         // Creació de taules del bar
         $this->taules = array();
         $taula0 = new Taula(0);
-        array_push($this->taules,$taula0);
+        array_push($this->taules, $taula0);
         $taula1 = new Taula(1);
-        array_push($this->taules,$taula1);
+        array_push($this->taules, $taula1);
         $taula2 = new Taula(2);
-        array_push($this->taules,$taula2);
+        array_push($this->taules, $taula2);
         $taula3 = new Taula(3);
-        array_push($this->taules,$taula3);
+        array_push($this->taules, $taula3);
 
         // Creació de productes disponibles al bar
         $this->productes = array();
-        $p1 = new Producte("Café",1.00);
-        $p2 = new Producte("Cervessa",1.50);
-        $p3 = new Producte("Cola Light",2.50);
-        $p4 = new Producte("Braves",3.50);
-        $p5 = new Producte("Sepia",7.50);
-        $p6 = new Producte("Aigua",1.50);
+        $p1 = new Producte("Café", 1.00);
+        $p2 = new Producte("Cervessa", 1.50);
+        $p3 = new Producte("Cola Light", 2.50);
+        $p4 = new Producte("Braves", 3.50);
+        $p5 = new Producte("Sepia", 7.50);
+        $p6 = new Producte("Aigua", 1.50);
         // Carreguem els productes de prova a la carta
         $this->carta = array($p1, $p2, $p3);
 
@@ -62,7 +63,7 @@ class Bar{
 
     /**
      * Get the value of taules
-     */ 
+     */
     public function getTaules()
     {
         return $this->taules;
@@ -72,11 +73,9 @@ class Bar{
 
     /**
      * Get the value of productes
-     */ 
+     */
     public function getProductes()
     {
         return $this->productes;
     }
-
-
 }

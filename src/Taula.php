@@ -3,7 +3,8 @@
 /**
  * Guarda els productes demanats en una taula del restaurant.
  */
-class Taula {
+class Taula
+{
     // Identificador de la taula
     private int $numTaula;
     // 
@@ -19,14 +20,15 @@ class Taula {
         $this->productes = array();
     }
 
-    public function afegirProducte(Producte $p){
-        array_push($this->productes,$p);
+    public function afegirProducte(Producte $p)
+    {
+        array_push($this->productes, $p);
     }
 
 
     /**
      * Get the value of numTaula
-     */ 
+     */
     public function getNumTaula()
     {
         return $this->numTaula;
@@ -34,7 +36,7 @@ class Taula {
 
     /**
      * Get the value of productes
-     */ 
+     */
     public function getProductes()
     {
         return $this->productes;
@@ -42,7 +44,7 @@ class Taula {
 
     /**
      * Get the value of pagat
-     */ 
+     */
     public function getPagat()
     {
         return $this->pagat;
