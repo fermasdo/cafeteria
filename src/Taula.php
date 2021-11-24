@@ -1,25 +1,31 @@
 <?php
 
 /**
- * Guarda els productes demanats en una taula del restaurant.
+ * Classe que representa una taula del Bar
+ * 
+ * @author Ferran Mas
  */
 class Taula
 {
     // Identificador de la taula
     private int $numTaula;
-    // 
+    // Indica si s'ha pagat el compte de la taula
     private bool $pagat;
     // Conjunt de productes demanats en la taula
     private array $productes;
+    // Especifíca el nombre de persones a la taula
     private int $comensals;
 
     public function __construct(int $numTaula)
     {
         $this->numTaula = $numTaula;
-        $this->pagat = FALSE;
+        $this->pagat = false;
         $this->productes = array();
     }
 
+    /**
+     * Afegir un producte als demanats a la taula
+     */
     public function afegirProducte(Producte $p)
     {
         array_push($this->productes, $p);

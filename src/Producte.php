@@ -1,5 +1,12 @@
 <?php
 
+/**
+ * Representa els productes oferits en la carta del bar
+ * 
+ * Guarda informació del nom del producte i el preu per unitat
+ * 
+ * @author Ferran Mas
+ */
 class Producte
 {
     private string $nomProducte;

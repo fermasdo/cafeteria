@@ -5,8 +5,11 @@ include_once 'Producte.php';
 
 
 /**
+ * Classe que representa un Bar concret
+ * 
  * Un Bar té una carta de productes i un conjunt de taules a les que es pot servir
  * 
+ * @author Ferran Mas
  */
 
 class Bar

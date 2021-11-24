@@ -19,7 +19,7 @@
     <h1> Gestió Cafeteria </h1>
 
     <h2> Llistat de taules </h2>
-    <p class="bg-warning"> <em> Exercici </em>: Cada taula té una sèrie de productes demanats, cal fer que el botó "Imprimir Tíquet" genere una pàgina amb el llistat de productes demanats per a la taula i el preu total. </p>
+    <p class="bg-warning"> <em> Exercici </em>: Cada taula té una sèrie de productes demanats, cal fer que el botó "Imprimir Tíquet" genere el llistat de productes demanats per a la taula i el preu total. </p>
 
 
     <table class="table table-striped">
@@ -51,11 +51,13 @@
     </table>
 
 
-    <h2> Detall Comanda </h2>
+    <!-- Al fer click en el botó "Imprimir Tíquet" apareixerà el compte de la taula -->
+    <h2> Tíquet Taula </h2>
     <p class="bg-warning"> Ací s'ha de mostrar el tíquet generat </p>
+    
     <?php
     /**
-     * IMPLEMENTAR
+     * Cal IMPLEMENTAR
      */
     ?>
 
